@@ -125,10 +125,10 @@ namespace ClassicUO.Game.UI.Gumps.Login
 
                     if (World.ClientLockedFeatures.Flags != 0 && !World.ClientLockedFeatures.Flags.HasFlag(LockedFeatureFlags.SeventhCharacterSlot))
                     {
-                        if (valid == 6 && !World.ClientLockedFeatures.Flags.HasFlag(LockedFeatureFlags.SixthCharacterSlot))
-                        {
-                            break;
-                        }
+                        //if (valid == 6 && !World.ClientLockedFeatures.Flags.HasFlag(LockedFeatureFlags.SixthCharacterSlot))
+                        //{
+                        //    break;
+                        //}
                     }
                     
                     Add

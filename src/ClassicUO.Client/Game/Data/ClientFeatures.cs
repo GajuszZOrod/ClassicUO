@@ -63,24 +63,24 @@ namespace ClassicUO.Game.Data
         public bool TooltipsEnabled { get; private set; } = true;
         public bool PopupEnabled { get; private set; }
         public bool PaperdollBooks { get; private set; }
-        public uint MaxChars { get; private set; } = 5;
+        public uint MaxChars { get; private set; } = 7;
 
         public void SetFlags(CharacterListFlags flags)
         {
             Flags = flags;
 
-            if ((flags & CharacterListFlags.CLF_ONE_CHARACTER_SLOT) != 0)
-            {
-                MaxChars = 1;
-            }
-            else if ((flags & CharacterListFlags.CLF_7_CHARACTER_SLOT) != 0)
-            {
-                MaxChars = 7;
-            }
-            else if ((flags & CharacterListFlags.CLF_6_CHARACTER_SLOT) != 0)
-            {
-                MaxChars = 6;
-            }
+            //if ((flags & CharacterListFlags.CLF_ONE_CHARACTER_SLOT) != 0)
+            //{
+            //    MaxChars = 1;
+            //}
+            //else if ((flags & CharacterListFlags.CLF_7_CHARACTER_SLOT) != 0)
+            //{
+            //    MaxChars = 7;
+            //}
+            //else if ((flags & CharacterListFlags.CLF_6_CHARACTER_SLOT) != 0)
+            //{
+            //    MaxChars = 7;
+            //}
 
             PopupEnabled = (flags & CharacterListFlags.CLF_CONTEXT_MENU) != 0;
 
